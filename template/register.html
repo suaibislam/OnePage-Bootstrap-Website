@@ -1,0 +1,17 @@
+<h1>Hello register</h1>
+
+<h1>Sign up Below</h1>
+
+<form method="POST" action="register">
+        {% csrf_token %}
+
+        <p>Usrename:</p>
+        <input type="text" name="Usrename">
+        <p>Email:</p>
+        <input type="email" name="email">
+        <p>password:</p>
+        <input type="password" name="password">
+        <p>Repeat password :</p>
+        <input type="password" name="password2"><br>
+        <input type="submit">
+</form>
